@@ -5,9 +5,9 @@ import java.util.*;
 public class Program1 {
 
 	public static void main(String args[]){
-		//LinkedList
+		//Creates a new LinkedList
 	    LinkedList l2 = new LinkedList();
-	    //add elements to the linked list
+	    //Add elements to the linked list
 	    l2.add("A");
 	    l2.add("B");
 	    l2.add("C");
@@ -18,17 +18,17 @@ public class Program1 {
 	    l2.add(1, "H");
 	    System.out.println("Original contents of l2: " + l2);
 
-	    //remove elements from the linked list
+	    //Remove elements from the linked list
 	    l2.remove("F");
 	    l2.remove(2);
 	    System.out.println("Contents of l2 after deletion: " + l2);
 	      
-	    //remove first and last elements
+	    //Remove first and last elements
 	    l2.removeFirst();
 	    l2.removeLast();
 	    System.out.println("l2 after deleting first and last: " + l2);
 
-	    //get and set a value
+	    //Get gets a value and set sets a value to a certain object
 	    Object val = l2.get(2);
 	    l2.set(2, (String) val + " Changed");
 	    System.out.println("l2 after change: " + l2 + "\n");
@@ -61,6 +61,7 @@ public class Program1 {
 	    anArray[8] = 900;
 	    anArray[9] = 1000;
 
+	    //Prints the element at each index
 	    System.out.println("Element at index 0: " + anArray[0]);
 	    System.out.println("Element at index 1: " + anArray[1]);
 	    System.out.println("Element at index 2: " + anArray[2]);
@@ -73,37 +74,50 @@ public class Program1 {
 	    System.out.println("Element at index 9: " + anArray[9] + "\n");
 	    
 	    //Arithmetic Operators
+	    //Integers for the code
 	    int a = 15;
 	    int b = 25;
 	    int c = 30;
+	    //Adds a and b
 	    System.out.println("a + b = " + (a + b));
+	    //Subtracts a and b
 	    System.out.println("a - b = " + (a - b));
+	    //Multiplies a and b
 	    System.out.println("a * b = " + (a * b));
+	    //Divides b by a
 	    System.out.println("b / a = " + (b / a));
+	    //Takes the remainder of b by a
 	    System.out.println("b % a = " + (b % a));
+	    //Takes the remainder of c by a
 	    System.out.println("c % a = " + (c % a) + "\n");
 	    
 	    //Comparator
 	    class Car implements Comparator<Car>, Comparable<Car>{
+	    //Name of the car
 	    private String name;
+	    //Cost of the car
 	    private int cost;
 	    Car(){
 	    }
-
+	    
+	    //Creates a car with a name and cost
 	    Car(String n, int a){
 	    	name = n;
 	    	cost = a;
 	    	}
-
+	    
+	    //Gets the name of a car
 	    public String getCarName(){
 	    	return name;
 	    }
-
+	    
+	    //Gets the cost of a car
 	    public int getCarCost(){
 	    	return cost;
 	    }
 
 	    //Overriding the compareTo method
+	    //Compares the name of two cars
 	    public int compareTo(Car c){
 	    	return (this.name).compareTo(c.name);
 	    }
@@ -116,7 +130,7 @@ public class Program1 {
 	    
 	    //Takes a list of Car objects
 	    List<Car> list = new ArrayList<Car>();
-
+	    //Adds new cars to the list
 	    list.add(new Car("Tesla Model S",65000));
 	    list.add(new Car("Lexus CT 200h",32200));
 	    list.add(new Car("Audi A3",29900));
@@ -133,18 +147,20 @@ public class Program1 {
 	    Collections.sort(list, new Car());
 	    System.out.println(" ");
 	    for(Car a1: list)
-	    	//Printing the sorted list of costs
+	    	//Printing the sorted list of cars by costs
 	    	System.out.print(a1.getCarName() +": $"+ a1.getCarCost() + ", ");
 	    System.out.println("Car names and costs" + "\n");
 	    
-	    //Printing the recursion
+	    //Printing the recursion, a factorial of 6
 	    System.out.println(Factorial(6));
 	    } 
 	//Recursive method
 	private static int Factorial(int i) {
 	// TODO Auto-generated method stub
+	//If the int is 1, 1 is returned or 1 is multiplied by the number(s) after it
 	if(i == 1)
 	    return 1;
+	//If the int is not 1 it is multiplied by the number before it until the number before it is 1
 	else{
 	    return(i*(Factorial(i-1)));
 	}
