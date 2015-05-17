@@ -7,7 +7,7 @@ public class Program1 {
 	public static void main(String args[]){
 		//LinkedList
 	    LinkedList l2 = new LinkedList();
-	    //add elements to the linked list
+	    //Add elements to the linked list
 	    l2.add("A");
 	    l2.add("B");
 	    l2.add("C");
@@ -18,17 +18,17 @@ public class Program1 {
 	    l2.add(1, "H");
 	    System.out.println("Original contents of l2: " + l2);
 
-	    //remove elements from the linked list
+	    //Remove elements from the linked list
 	    l2.remove("F");
 	    l2.remove(2);
 	    System.out.println("Contents of l2 after deletion: " + l2);
 	      
-	    //remove first and last elements
+	    //Remove first and last elements
 	    l2.removeFirst();
 	    l2.removeLast();
 	    System.out.println("l2 after deleting first and last: " + l2);
 
-	    //get and set a value
+	    //Get and set a value
 	    Object val = l2.get(2);
 	    l2.set(2, (String) val + " Changed");
 	    System.out.println("l2 after change: " + l2 + "\n");
@@ -61,6 +61,7 @@ public class Program1 {
 	    anArray[8] = 900;
 	    anArray[9] = 1000;
 
+	//Prints the elements in the index
 	    System.out.println("Element at index 0: " + anArray[0]);
 	    System.out.println("Element at index 1: " + anArray[1]);
 	    System.out.println("Element at index 2: " + anArray[2]);
@@ -76,29 +77,40 @@ public class Program1 {
 	    int a = 15;
 	    int b = 25;
 	    int c = 30;
+	    //Adds a and b
 	    System.out.println("a + b = " + (a + b));
+	    //Subtracts a and b
 	    System.out.println("a - b = " + (a - b));
+	    //Multiplies a and b
 	    System.out.println("a * b = " + (a * b));
+	    //Divides b by a
 	    System.out.println("b / a = " + (b / a));
+	    //The remainder of b by a
 	    System.out.println("b % a = " + (b % a));
+	    //The remainder of c by a
 	    System.out.println("c % a = " + (c % a) + "\n");
 	    
 	    //Comparator
 	    class Car implements Comparator<Car>, Comparable<Car>{
+	    //The name of a car
 	    private String name;
+	    //The cost of a car
 	    private int cost;
 	    Car(){
 	    }
 
+		//Creates a car with a name and cost
 	    Car(String n, int a){
 	    	name = n;
 	    	cost = a;
 	    	}
 
+		//Gets the name of a car
 	    public String getCarName(){
 	    	return name;
 	    }
 
+		//Gets the cost of a car
 	    public int getCarCost(){
 	    	return cost;
 	    }
@@ -143,8 +155,10 @@ public class Program1 {
 	//Recursive method
 	private static int Factorial(int i) {
 	// TODO Auto-generated method stub
+	//If the int is 1, return 1 
 	if(i == 1)
 	    return 1;
+	//Else multiply the int by the int before it
 	else{
 	    return(i*(Factorial(i-1)));
 	}
