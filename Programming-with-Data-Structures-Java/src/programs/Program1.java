@@ -28,7 +28,11 @@ public class Program1 {
 	    l2.removeLast();
 	    System.out.println("l2 after deleting first and last: " + l2);
 
+<<<<<<< HEAD
 	    //Get gets a value and set sets a value to a certain object
+=======
+	    //Get and set a value
+>>>>>>> origin/master
 	    Object val = l2.get(2);
 	    l2.set(2, (String) val + " Changed");
 	    System.out.println("l2 after change: " + l2 + "\n");
@@ -61,7 +65,11 @@ public class Program1 {
 	    anArray[8] = 900;
 	    anArray[9] = 1000;
 
+<<<<<<< HEAD
 	    //Prints the element at each index
+=======
+	//Prints the elements in the index
+>>>>>>> origin/master
 	    System.out.println("Element at index 0: " + anArray[0]);
 	    System.out.println("Element at index 1: " + anArray[1]);
 	    System.out.println("Element at index 2: " + anArray[2]);
@@ -86,13 +94,20 @@ public class Program1 {
 	    System.out.println("a * b = " + (a * b));
 	    //Divides b by a
 	    System.out.println("b / a = " + (b / a));
+<<<<<<< HEAD
 	    //Takes the remainder of b by a
 	    System.out.println("b % a = " + (b % a));
 	    //Takes the remainder of c by a
+=======
+	    //The remainder of b by a
+	    System.out.println("b % a = " + (b % a));
+	    //The remainder of c by a
+>>>>>>> origin/master
 	    System.out.println("c % a = " + (c % a) + "\n");
 	    
 	    //Comparator
 	    class Car implements Comparator<Car>, Comparable<Car>{
+<<<<<<< HEAD
 	    //Name of the car
 	    private String name;
 	    //Cost of the car
@@ -101,10 +116,21 @@ public class Program1 {
 	    }
 	    
 	    //Creates a car with a name and cost
+=======
+	    //The name of a car
+	    private String name;
+	    //The cost of a car
+	    private int cost;
+	    Car(){
+	    }
+
+		//Creates a car with a name and cost
+>>>>>>> origin/master
 	    Car(String n, int a){
 	    	name = n;
 	    	cost = a;
 	    	}
+<<<<<<< HEAD
 	    
 	    //Gets the name of a car
 	    public String getCarName(){
@@ -112,6 +138,15 @@ public class Program1 {
 	    }
 	    
 	    //Gets the cost of a car
+=======
+
+		//Gets the name of a car
+	    public String getCarName(){
+	    	return name;
+	    }
+
+		//Gets the cost of a car
+>>>>>>> origin/master
 	    public int getCarCost(){
 	    	return cost;
 	    }
@@ -157,10 +192,17 @@ public class Program1 {
 	//Recursive method
 	private static int Factorial(int i) {
 	// TODO Auto-generated method stub
+<<<<<<< HEAD
 	//If the int is 1, 1 is returned or 1 is multiplied by the number(s) after it
 	if(i == 1)
 	    return 1;
 	//If the int is not 1 it is multiplied by the number before it until the number before it is 1
+=======
+	//If the int is 1, return 1 
+	if(i == 1)
+	    return 1;
+	//Else multiply the int by the int before it
+>>>>>>> origin/master
 	else{
 	    return(i*(Factorial(i-1)));
 	}
