@@ -3,7 +3,10 @@ package programs;
 import java.util.*;
 
 public class Program1 {
-
+	//Data Structures
+	//This program basically goes over the basics of data structures
+	//It involves a LinkedList, date, array, arithmetic operators, 
+	//comparator, ArrayList, sorting, recursion and factorial
 	public static void main(String args[]){
 		//Creates a new LinkedList
 	    LinkedList l2 = new LinkedList();
