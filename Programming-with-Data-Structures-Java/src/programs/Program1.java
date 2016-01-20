@@ -102,12 +102,6 @@ public class Program1 {
 	    private int cost;
 	    Car(){
 	    }
-	    //The name of a car
-	    private String name;
-	    //The cost of a car
-	    private int cost;
-	    Car(){
-	    }
 
 		//Creates a car with a name and cost
 	    Car(String n, int a){
