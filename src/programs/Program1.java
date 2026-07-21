@@ -138,6 +138,12 @@ public class Program1 {
 	    list.add(new Car("Audi A3",29900));
 	    list.add(new Car("Acura ILX",27900));
 	    list.add(new Car("Volkswagen Jetta",17325));
+	    //Adds new cars to the list 
+	    list.add(new Car("Tesla Model Y (AWD & EV)",41990)); 
+	    list.add(new Car("BMW i4 xDrive40 (AWD & EV)",62300)); 
+	    list.add(new Car("Lexus ES 350e (FWD % EV)",48895)); 
+	    list.add(new Car("Honda Civic Hybrid (FWD)",29395)); 
+	    list.add(new Car("Honda Accord LE (FWD)",28395)); 
 	    //Sorts the array list
 	    Collections.sort(list);
 
